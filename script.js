@@ -97,6 +97,5 @@ while (true){
     }
     else if (var3 == "/")  {
         var1 /= var2}
-       //alert(`Промежуточный результат : ` + var1)
 }
 alert(`Итоговый результат : ` + var1)
