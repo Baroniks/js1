@@ -62,22 +62,41 @@
 // "Вы или слишком молодой, или слишком старый"
 // alert(rez)
 
-let userName = prompt("Кто там?", '');
+// let userName = prompt("Кто там?", '');
 
-if (userName == 'Админ') {
+// if (userName == 'Админ') {
 
-let pass = prompt('Пароль?', '');
+// let pass = prompt('Пароль?', '');
 
-if (pass == 'Я главный') {
-    alert( 'Здравствуйте!' );
-} else if (pass == '' || pass == null) {
-    alert( 'Отменено' );
-} else {
-    alert( 'Неверный пароль' );
+// if (pass == 'Я главный') {
+//     alert( 'Здравствуйте!' );
+// } else if (pass == '' || pass == null) {
+//     alert( 'Отменено' );
+// } else {
+//     alert( 'Неверный пароль' );
+// }
+
+// } else if (userName == '' || userName == null) {
+// alert( 'Отменено' );
+// } else {
+// alert( "Я вас не знаю" );
+// }
+
+let var1= 0;
+while (true){
+    let var3 = prompt("Введите операцию для калькулятора : ", "")
+    let var2 = +prompt("Введите число : " + `(Промежуточный результат : ` + var1 + `)`,"")
+    if (!var2) break;
+    if (var3 == "+") {
+        var1 += var2 
+    } else if (var3 == "-") {
+        var1 -= var2
+    }
+    else if (var3 == "*")  {
+        var1 *= var2
+    }
+    else if (var3 == "/")  {
+        var1 /= var2}
+       //alert(`Промежуточный результат : ` + var1)
 }
-
-} else if (userName == '' || userName == null) {
-alert( 'Отменено' );
-} else {
-alert( "Я вас не знаю" );
-}
+alert(`Итоговый результат : ` + var1)
