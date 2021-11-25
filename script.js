@@ -82,20 +82,81 @@
 // alert( "Я вас не знаю" );
 // }
 
-let var1= 0;
-while (true){
-    let var3 = prompt("Введите операцию для калькулятора : ", "")
-    let var2 = +prompt("Введите число : " + `(Промежуточный результат : ` + var1 + `)`,"")
-    if (!var2) break;
-    if (var3 == "+") {
-        var1 += var2 
-    } else if (var3 == "-") {
-        var1 -= var2
-    }
-    else if (var3 == "*")  {
-        var1 *= var2
-    }
-    else if (var3 == "/")  {
-        var1 /= var2}
+// let var1= 0;
+// while (true){
+//     let var3 = prompt("Введите операцию для калькулятора : ", "")
+//     let var2 = +prompt("Введите число : " + `(Промежуточный результат : ` + var1 + `)`,"")
+//     if (!var2) break;
+//     if (var3 == "+") {
+//         var1 += var2 
+//     } else if (var3 == "-") {
+//         var1 -= var2
+//     }
+//     else if (var3 == "*")  {
+//         var1 *= var2
+//     }
+//     else if (var3 == "/")  {
+//         var1 /= var2}
+// }
+// alert(`Итоговый результат : ` + var1)
+
+// outer: for (let i = 0; i < 3; i++) {
+
+//     for (let j = 0; j < 3; j++) {
+//     let input = prompt(`Значение на координатах (${i},${j})`, '');
+//     if (!input) break outer;
+//         }
+//     }
+// alert("Gotovo!")
+
+// let a = 2 + 2;
+
+// switch (a) {
+//   case 4:
+//     alert('Правильно!');
+//     break;
+
+//   case 3: // (*) группируем оба case
+//   case 5:
+//     alert('Неправильно!');
+//     alert("Может вам посетить урок математики?");
+//     break;
+
+//   default:
+//     alert('Результат выглядит странновато. Честно.');
+// }
+
+// switch (browser) {
+//     case 'Edge':
+//       alert( "You've got the Edge!" );
+//       break;
+
+//     case 'Chrome':
+//     case 'Firefox':
+//     case 'Safari':
+//     case 'Opera':
+//       alert( 'Okay we support these browsers too' );
+//       break;
+
+//     default:
+//       alert( 'We hope that this page looks ok!' );
+//   }
+
+// let browser = prompt("Введите вш браузер : ");
+// if (browser === "Edge" 
+// || browser === "Chrome" 
+// || browser === "Opera" 
+// || browser === "Firefox" 
+// || browser === "Safari") {
+//     alert("Okay, you're good guys and you're using :" + browser)
+//     }
+//     else {alert('Not good boys! Repeat!')
+// }
+
+function showMessage() {
+    let message = prompt("You're name : ", "Calvin Cleine");
+
+    alert( message );
 }
-alert(`Итоговый результат : ` + var1)
+
+showMessage();
